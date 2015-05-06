@@ -1,0 +1,175 @@
+.rocketMonkeySVG {
+  background: #1d1d1d;
+  width: 600px;
+}
+.jetBubble {
+  animation-name: bubble;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  -ms-transform-origin: 20% 40%; /* IE 9 */
+  -webkit-transform-origin: 20% 40%; /* Chrome, Safari, Opera */
+  transform-origin: 20% 40%;
+}
+.jetBubble.odd {
+  animation-name: bubbleOdd;
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+
+@keyframes bubble {
+  from { transform: none; }
+  50% { transform: scale(1.4); }
+  to { transform: none; }
+}
+@keyframes bubbleOdd {
+  from { transform: none; }
+  50% { transform: scale(1.4); }
+  to { transform: none; }
+}
+
+.astronaut {
+  animation-name: flight;
+  animation-delay: 0s;
+  animation-duration: .15s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  -ms-transform-origin: 20% 40%; /* IE 9 */
+  -webkit-transform-origin: 20% 40%; /* Chrome, Safari, Opera */
+  transform-origin: 20% 40%;
+}
+
+@keyframes flight {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(0px, 5px, 0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.pulse1 {
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+
+.pulse2 {
+  animation-delay: .25s;
+  animation-duration: 1s;
+}
+.pulse3 {
+  animation-delay: .5s;
+  animation-duration: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.star {
+  animation-name: star;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.star.second {
+  animation-delay: 1s;
+  animation-duration: 1.5s;
+}
+.star.third {
+  animation-delay: 2s;
+  animation-duration: 2s;
+}
+
+@keyframes star {
+  0% {
+    transform: translate3d(0px, -5px, 0px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translate3d(0px, 8000px, 0px);
+  }
+}
+
+
+.satellite {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 10000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -ms-transform-origin: 50% 40%; /* IE 9 */
+  -webkit-transform-origin: 50% 40%; /* Chrome, Safari, Opera */
+  transform-origin: 50% 40%;
+}
+@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+    }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
+.satellitePulse {
+  animation-name: satellitePulse;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.satellitePulse1 {
+  animation-delay: 0s;
+  animation-duration: 2s;
+}
+
+.satellitePulse2 {
+  animation-delay: .75s;
+  animation-duration: 2s;
+}
+.satellitePulse3 {
+  animation-delay: .1s;
+  animation-duration: 2s;
+}
+
+@keyframes satellitePulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,6 +1,7 @@
 .rocketMonkeySVG {
-  background: #1d1d1d;
-  width: 600px;
+  background: #000;
+  width: 100%;
+  height: 100%;
 }
 .jetBubble {
   animation-name: bubble;
@@ -88,27 +89,83 @@
 .star {
   animation-name: star;
   animation-delay: 0s;
-  animation-duration: 1s;
-  animation-timing-function: ease;
+  animation-duration: 10s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
-}
-
-.star.second {
-  animation-delay: 1s;
-  animation-duration: 1.5s;
-}
-.star.third {
-  animation-delay: 2s;
-  animation-duration: 2s;
 }
 
 @keyframes star {
   0% {
-    transform: translate3d(0px, -5px, 0px);
-    animation-timing-function: ease-in;
+    transform: translate3d(0px, 0, 0px);
   }
   100% {
-    transform: translate3d(0px, 8000px, 0px);
+    transform: translate3d(0px, 50%, 0px);
+  }
+}
+
+.jibbers {
+  animation-name: jibbers;
+  animation-delay: 2s;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  -ms-transform-origin: 100%; /* IE 9 */
+  -webkit-transform-origin: 100%; /* Chrome, Safari, Opera */
+  transform-origin: 100%;
+  transform: translate3d(100px, 0, 0px);
+}
+
+@keyframes jibbers {
+  0% {
+    transform: translate3d(100px, 0, 0px);
+  }
+  5% {
+    transform: translate3d(0px, 0, 0px);
+  }
+  95% {
+    transform: translate3d(0px, 0, 0px);
+  }
+  100% {
+    transform: translate3d(100px, 0, 0px);
+  }
+}
+
+.flame {
+  animation-name: flame;
+  animation-delay: 8s;
+  animation-duration: 12s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  -ms-transform-origin: 100% 80%; /* IE 9 */
+  -webkit-transform-origin: 100% 80%; /* Chrome, Safari, Opera */
+  transform-origin: 100% 80%;
+  transform: scale(0);
+}
+
+@keyframes flame {
+  0% {
+    transform: scale(0);
+  }
+  10% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 

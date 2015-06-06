@@ -3,6 +3,12 @@
   width: 100%;
   height: 100%;
 }
+.satellite:hover .bannana-light path {
+  fill: #FFF44F;
+}
+.satellite:hover .bannana-dark path {
+  fill: #FFE135;
+}
 .jetBubble {
   animation-name: bubble;
   animation-delay: 0s;

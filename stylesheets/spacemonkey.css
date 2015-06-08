@@ -105,7 +105,7 @@
     transform: translate3d(0px, 0, 0px);
   }
   100% {
-    transform: translate3d(0px, 50%, 0px);
+    transform: translate3d(0px, 1450px, 0px);
   }
 }
 
@@ -160,7 +160,7 @@
   animation-iteration-count: 1;
   -ms-transform-origin: 100% 80%; /* IE 9 */
   -webkit-transform-origin: 100% 80%; /* Chrome, Safari, Opera */
-  transform-origin: 100% 80%;
+  transform-origin: 1200px 90px;
 }
 
 @keyframes flame {
@@ -205,58 +205,30 @@
   -webkit-animation-duration: 10000ms;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+  animation-name: spin;
+  iteration-count: infinite;
+  animation-timing-function: linear;
   -ms-transform-origin: 50% 40%; /* IE 9 */
   -webkit-transform-origin: 50% 40%; /* Chrome, Safari, Opera */
   transform-origin: 50% 40%;
 }
 @-ms-keyframes spin {
-  from { -ms-transform: rotate(0deg); }
-  to { -ms-transform: rotate(360deg); }
+  0% { -ms-transform: rotate(0deg); }
+  100% { -ms-transform: rotate(360deg); }
 }
 @-moz-keyframes spin {
-  from { -moz-transform: rotate(0deg); }
-  to { -moz-transform: rotate(360deg); }
+  0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); }
 }
 @-webkit-keyframes spin {
-  from { -webkit-transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); }
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
 @keyframes spin {
-  from {
+  0% {
     transform:rotate(0deg);
     }
-  to {
-    transform:rotate(360deg);
-  }
-}
-
-.satellitePulse {
-  animation-name: satellitePulse;
-  animation-timing-function: ease;
-  animation-iteration-count: infinite;
-}
-.satellitePulse1 {
-  animation-delay: 0s;
-  animation-duration: 2s;
-}
-
-.satellitePulse2 {
-  animation-delay: .75s;
-  animation-duration: 2s;
-}
-.satellitePulse3 {
-  animation-delay: .1s;
-  animation-duration: 2s;
-}
-
-@keyframes satellitePulse {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0
-  }
   100% {
-    opacity: 1;
+    transform:rotate(360deg);
   }
 }

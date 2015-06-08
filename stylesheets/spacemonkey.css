@@ -157,10 +157,11 @@
   animation-delay: 2s;
   animation-duration: 12s;
   animation-timing-function: ease;
-  animation-iteration-count: 1;
+  animation-iteration-count: 5;
   -ms-transform-origin: 100% 80%; /* IE 9 */
   -webkit-transform-origin: 100% 80%; /* Chrome, Safari, Opera */
-  transform-origin: 1200px 90px;
+  /*transform-origin: 1200px 90px;*/
+  transform-origin: 1300px 90px;
 }
 
 @keyframes flame {
@@ -205,12 +206,13 @@
   -webkit-animation-duration: 10000ms;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  animation-name: spin;
-  iteration-count: infinite;
-  animation-timing-function: linear;
   -ms-transform-origin: 50% 40%; /* IE 9 */
   -webkit-transform-origin: 50% 40%; /* Chrome, Safari, Opera */
-  transform-origin: 50% 40%;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 10000ms;
+  transform-origin: 260px 408px;
 }
 @-ms-keyframes spin {
   0% { -ms-transform: rotate(0deg); }

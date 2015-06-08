@@ -212,7 +212,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-duration: 10000ms;
-  transform-origin: 260px 408px;
+  transform-origin: 270px 400px;
 }
 @-ms-keyframes spin {
   0% { -ms-transform: rotate(0deg); }

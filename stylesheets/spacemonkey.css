@@ -165,7 +165,7 @@
 .star {
   animation-name: star;
   animation-delay: 0s;
-  animation-duration: 20s;
+  animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   -webkit-animation-name: star;
@@ -173,17 +173,19 @@
   -webkit-animation-duration: 10s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
+  -ms-animation-name: star;
+  -ms-animation-delay: 0s;
+  -ms-animation-duration: 10s;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: infinite;
 }
 
 @keyframes star {
   0% {
     transform: translate3d(0px, 0, 0px);
   }
-  50% {
-    transform: translate3d(0px, 1450px, 0px);
-  }
   100% {
-    transform: translate3d(0px, 0, 0px);
+    transform: translate3d(0px, 1450px, 0px);
   }
 }
 @-webkit-keyframes star {
@@ -192,6 +194,17 @@
   }
   100% {
     -webkit-transform: translate3d(0px, 1450px, 0px);
+  }
+}
+@-ms-keyframes star {
+  0% {
+    -ms-transform: translate3d(0px, 0, 0px);
+  }
+  50% {
+    -ms-transform: translate3d(0px, 1450px, 0px);
+  }
+  100% {
+    -ms-transform: translate3d(0px, 0, 0px);
   }
 }
 

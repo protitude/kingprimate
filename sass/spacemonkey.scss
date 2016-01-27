@@ -17,7 +17,7 @@ html,
   @include animation-duration(.25s);
   @include animation-timing-function(ease);
   @include animation-iteration-count(infinite);
-  @include transform-origin(20%, 40%);
+  @include transform-origin(50%, 90%);
 }
 .jetBubble.odd {
   @include animation-name(bubble);
